@@ -3,14 +3,15 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "standard", "prettier"],
+  extends: ['plugin:react/recommended', 'standard', 'prettier'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["react"],
+  parser: '@babel/eslint-parser',
+  plugins: ['react'],
   rules: {},
 };

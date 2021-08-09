@@ -1,6 +1,8 @@
 # cra-eslint-prettier-standard-style template
 
-To reproduce the contents of this repository, follow the steps below:
+### - To use this repository, clone it and run `npm install && npm run start`
+
+### - To reproduce the contents of this repository, follow the steps below:
 
 0. You must have **Node.js** installed.
 1. Bootstrap a fresh React app using **cra**: `npx create-react-app my-project`
@@ -54,3 +56,32 @@ To reproduce the contents of this repository, follow the steps below:
      "editor.formatOnSave": true
    }
    ```
+
+   (Previous steps come from my other repo template, https://github.com/Madalin-Antonoiu/cra-eslint-prettier-standard-style )
+
+6. To be able to write state = {} and arrow functions inside class components, install babel-parser for eslint , `npm install -d babel-eslint` and add `parser: "@babel/eslint-parser"` to **.esintrc.js**
+
+7. Optional - Adding _**Material UI**_ to the project:  
+    a. `npm install @material-ui/core`  
+    b. Optional - Add Roboto Font to _`public/index.html`_
+
+   ```HTML
+   <link
+     rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+   />
+   ```
+
+   c. Optional - Add **Font Icons** _`public/index.html`_
+
+   ```HTML
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+   ```
+
+   d. Optional - Add **SVG Icons** `npm install @material-ui/icons`  
+   e. Optional - Add **Theming** to your project:
+   https://material-ui.com/customization/theming/
+
+### - Useful info:
+
+https://iconify.design/ - Over 100,000 vector icons (CC0).
